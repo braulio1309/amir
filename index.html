@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Formulario</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h2>Formulario de Ejemplo</h2>
+
+    <form id="miFormulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+      <label for="nombre">Email:</label>
+
+      <input type="email" id="email" name="email" />
+
+      <br /><br />
+      <button type="button">Mostrar post</button>
+    </form>
+    <div id="post"></div>
+    <script src="main.js"></script>
+
+    <script>
+      console.log('users', JSON.parse(localStorage.getItem('users')));
+      console.log('logged', JSON.parse(localStorage.getItem('user')))
+
+    </script>
+  </body>
+</html>
